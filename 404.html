@@ -1,47 +1,8 @@
-<!doctype html>
-<html lang="ca">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="robots" content="noindex">
-  <title>Pàgina no trobada · uncartell</title>
-  <style>
-    :root{--accent:#73f172;--soft:#e4ffe3;--ink:#181614;--paper:#fafaf8}
-    *{box-sizing:border-box}
-    body{margin:0;min-height:100vh;display:grid;place-items:center;padding:24px;background:var(--paper);color:var(--ink);font-family:"Helvetica Neue",Helvetica,Arial,sans-serif}
-    main{width:min(520px,100%);padding:48px 38px;border:1px solid #d8d8d8;border-radius:22px;background:#fff;text-align:center}
-    .code{display:inline-grid;place-items:center;width:74px;height:74px;margin-bottom:22px;border-radius:50%;background:var(--soft);font-size:22px;font-weight:700}
-    h1{margin:0 0 10px;font-size:clamp(30px,6vw,46px);letter-spacing:-1.4px}
-    p{margin:0 0 28px;color:#6b675f;font-size:17px;line-height:1.45}
-    a{display:inline-flex;min-height:48px;align-items:center;justify-content:center;padding:0 24px;border-radius:12px;background:var(--accent);color:var(--ink);font-weight:700;text-decoration:none}
-  </style>
-</head>
-<body>
-  <main>
-    <span class="code">404</span>
-    <h1 id="title">Aquesta pàgina no existeix.</h1>
-    <p id="copy">Potser l’enllaç ha canviat o hi has arribat per error.</p>
-    <a id="home" href="https://uncartell.cat/">Torna a l’inici</a>
-  </main>
-  <script>
-    const spanish = location.hostname === 'uncartel.es' || location.hostname === 'www.uncartel.es';
-    const knownRoutes = new Set(['cartells','personalitza','manifest','contacte','faqs','legal','privacitat','cookies','admin']);
-    const requestedRoute = location.pathname.replace(/^\/+|\/+$/g,'');
-    if(knownRoutes.has(requestedRoute)){
-      const destination = new URL('/', location.origin);
-      destination.searchParams.set('route', requestedRoute);
-      location.replace(destination.href);
-    }
-    if(spanish){
-      document.documentElement.lang = 'es';
-      document.documentElement.style.setProperty('--accent','#71DEFF');
-      document.documentElement.style.setProperty('--soft','#C0F3FF');
-      document.title = 'Página no encontrada · uncartel';
-      document.getElementById('title').textContent = 'Esta página no existe.';
-      document.getElementById('copy').textContent = 'Puede que el enlace haya cambiado o que hayas llegado aquí por error.';
-      document.getElementById('home').textContent = 'Volver al inicio';
-      document.getElementById('home').href = 'https://uncartel.es/';
-    }
-  </script>
-</body>
-</html>
+<!doctype html><html lang="es" class="u-lang-es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="index,follow,max-image-preview:large"><title>Herramientas de diseño para el día a día | uncartel.es</title><meta name="description" content="Crea, personaliza y descarga carteles, cartas, menús, tarifas y códigos QR con un diseño claro y profesional."><link rel="stylesheet" href="/assets/platform.css?v=17"><link rel="canonical" href="https://uncartel.es/"><link rel="alternate" hreflang="es" href="https://uncartel.es/"><link rel="alternate" hreflang="ca" href="https://uncartell.cat/"><meta property="og:type" content="website"><meta property="og:locale" content="es_ES"><meta property="og:title" content="Herramientas de diseño gratuitas para imprimir | uncartel.es"><meta property="og:description" content="Crea, personaliza y descarga carteles, cartas, menús, tarifas y códigos QR con un diseño claro y profesional."><meta property="og:url" content="https://uncartel.es/"><meta property="og:image" content="https://uncartel.es/og-uncartel-es.jpg"><meta name="twitter:card" content="summary_large_image"></head><body><div data-platform-header></div>
+<main><section class="u-shell" style="padding:100px 0"><h1>404</h1><p>Página no encontrada.</p><a class="u-button primary" href="/">Volver al inicio</a></section></main><main><section class="u-hero"><div class="u-shell"><div class="u-hero-box"><div><span class="u-eyebrow"> </span><h1><span class="u-hero-line">Diseñar lo que necesitas</span><span class="u-hero-line">ahora es más fácil ✨</span></h1></div><div><p class="u-hero-copy">Fácil, gratis y sin registro.</p><div class="u-actions"><a class="u-button primary" href="/carteles/">Explora las herramientas</a><a class="u-button" href="/planes/">Compara los planes</a></div></div></div></div></section>
+<section class="u-section"><div class="u-shell"><div class="u-section-head"><div><span class="u-eyebrow">Herramientas</span><h2>Todo empieza con una necesidad.</h2></div><p class="u-section-lead">Elige la herramienta, edita el contenido y descarga una pieza coherente sin empezar de cero.</p></div><div class="u-tools-grid">
+<a class="u-tool-card" href="/carteles/"><div class="u-tool-visual"><span class="u-tool-icon"><svg viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg></span></div><div class="u-tool-content"><h3>Creador de carteles</h3><p>Descarga carteles listos o crea uno desde un icono. Edita textos, colores y estilo según tu plan.</p><span class="u-tool-link">Crea un cartel →</span></div></a>
+<a class="u-tool-card" href="/cartas-y-menus/"><div class="u-tool-visual"><span class="u-tool-icon"><svg viewBox="0 0 24 24"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16H6.5A2.5 2.5 0 0 0 4 21.5z"/><path d="M4 5.5v16M8 7h8M8 11h8"/></svg></span></div><div class="u-tool-content"><h3>Cartas y menús</h3><p>Crea cartas de restaurante, menús plegables, postales y experiencias móviles con una composición profesional.</p><span class="u-tool-link">Crea una carta →</span></div></a>
+<a class="u-tool-card" id="price-tables" href="/tablas-de-precios/"><div class="u-tool-visual"><span class="u-tool-icon"><svg viewBox="0 0 24 24"><path d="M4 5h16M4 12h16M4 19h16M8 3v4M15 10v4M11 17v4"/></svg></span></div><div class="u-tool-content"><h3>Tarifas y servicios</h3><p>Crea listas de servicios y tarifas claras para imprimir o compartir desde el móvil.</p><span class="u-tool-link">Crea tarifas y servicios →</span></div></a>
+<a class="u-tool-card" href="/codigos-qr/"><div class="u-tool-visual"><span class="u-tool-icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><path d="M14 14h3v3h4v4h-7v-3m4-4h3"/></svg></span></div><div class="u-tool-content"><h3>Códigos QR</h3><p>Convierte cualquier enlace en un QR gratuito, personalizable y listo para imprimir.</p><span class="u-tool-link">Crea un código QR →</span></div></a>
+</div></div></section></main><div data-platform-footer></div><div data-global-quota></div><script src="/assets/platform.js?v=9"></script></body></html>
